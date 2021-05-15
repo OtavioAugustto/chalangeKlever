@@ -127,6 +127,12 @@
   box-shadow: none;
 }
 
+.label-txt{
+  font-size: medium;
+  font-weight: bolder;
+  color: #282c34;
+}
+
 
 
 
