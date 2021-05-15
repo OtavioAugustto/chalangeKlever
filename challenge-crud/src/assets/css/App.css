@@ -76,3 +76,57 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.title-table{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:calc(10px + 1vmin);
+  margin: 0.4em 0em 0.2em 0em;
+}
+
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+
+/* buttons */
+
+.bt-add{
+  margin: 0.5em 0em 0em 0em;
+  border: 0;
+  outline: none;
+  font-size: small;
+  box-shadow: none;
+}
+
+.bt-back{
+  margin: 0.5em 0em 0em 0em;
+  border: 0;
+  outline: none;
+  font-size: small;
+  box-shadow: none;
+}
+
+.bt-edit{
+  border: 0;
+  outline: none;
+  font-size: small;
+  box-shadow: none;
+}
+
+.bt-remove{
+  border: 0;
+  outline: none;
+  font-size: small;
+  box-shadow: none;
+}
+
+
+
+
