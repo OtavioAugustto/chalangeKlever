@@ -1,0 +1,85 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Paulo Cardoso",
+      "age": 18,
+      "weight": 77,
+      "height": 1.74
+    },
+    {
+      "id": 2,
+      "name": "João Alencar",
+      "age": 22,
+      "weight": 67,
+      "height": 1.64
+    },
+    {
+      "id": 3,
+      "name": "Patrícia Silveira",
+      "age": 23,
+      "weight": 54,
+      "height": 1.54
+    },
+    {
+      "id": 4,
+      "name": "Erica Vilar",
+      "age": 24,
+      "weight": 49,
+      "height": 1.6
+    },
+    {
+      "id": 5,
+      "name": "Douglas Borges",
+      "age": 29,
+      "weight": 80,
+      "height": 1.8
+    },
+    {
+      "id": 6,
+      "name": "Marcos Miranda",
+      "age": 35,
+      "weight": 90,
+      "height": 1.86
+    },
+    {
+      "id": 7,
+      "name": "Otávio Augusto",
+      "age": 27,
+      "weight": 92,
+      "height": 1.86
+    },
+    {
+      "student": {},
+      "id": 8
+    },
+    {
+      "student": {},
+      "id": 9
+    },
+    {
+      "student": {},
+      "id": 10
+    },
+    {
+      "student": {},
+      "id": 11
+    },
+    {
+      "student": {},
+      "id": 12
+    },
+    {
+      "student": {},
+      "id": 13
+    },
+    {
+      "student": {},
+      "id": 14
+    },
+    {
+      "student": {},
+      "id": 15
+    }
+  ]
+}

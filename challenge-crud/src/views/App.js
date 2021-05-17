@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Switch>
         <div className="App">
-            <header className="App-header">
-              <TopBar></TopBar>
+            <header className="App-header" >
+              <TopBar ></TopBar>
             </header>
             <Route exact path="/">
               <div className="App-content">
