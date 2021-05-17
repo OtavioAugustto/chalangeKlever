@@ -19,6 +19,7 @@ class ListStudents extends Component {
   render(){
 
     const { students } = this.state;
+    console.log(students);
     return ( 
  
     <div className="container-fluid">

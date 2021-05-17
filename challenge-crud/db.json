@@ -50,36 +50,11 @@
       "height": 1.86
     },
     {
-      "student": {},
+      "name": "Otávio Augusto da Silva Santos",
+      "age": "19",
+      "weight": "88",
+      "height": "1.72",
       "id": 8
-    },
-    {
-      "student": {},
-      "id": 9
-    },
-    {
-      "student": {},
-      "id": 10
-    },
-    {
-      "student": {},
-      "id": 11
-    },
-    {
-      "student": {},
-      "id": 12
-    },
-    {
-      "student": {},
-      "id": 13
-    },
-    {
-      "student": {},
-      "id": 14
-    },
-    {
-      "student": {},
-      "id": 15
     }
   ]
 }

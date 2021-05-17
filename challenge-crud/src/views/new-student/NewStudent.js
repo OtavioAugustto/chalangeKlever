@@ -9,7 +9,7 @@ import axios from 'axios';
 class NewStudent extends Component {
 
   state = {
-    id:'',
+  
     name:'',
     age:'',
     weight:'',
@@ -18,36 +18,51 @@ class NewStudent extends Component {
   }
 
   insertData = event => {
-    this.setState({
 
-      id: event.target.value,
-      name: event.target.value,
-      age: event.target.value,
-      weight: event.target.value,
-      height: event.target.value
+        if(event.target.id === 'name') {
+          this.setState({
+            name: event.target.value,
+          });
+        }
 
-    });
- 
-  };
+        if(event.target.id === 'age'){
+          this.setState({
+            age: event.target.value,
+          });
+        }
+
+        if(event.target.id === 'weight'){
+          this.setState({
+            weight: event.target.value,
+          });
+        }
+
+        if(event.target.id === 'height'){
+          this.setState({
+            height: event.target.value,
+          });
+        }
+    };
 
   sendStudent = event =>{
     event.preventDefault();
 
     const student = {
-      id:this.id,
-      name:this.name,
-      age:this.age,
-      weight:this.weight,
-      height:this.height
-    }
 
-    axios.post('http://localhost:5000/students', {student})
+      name:this.state.name,
+      age:this.state.age,
+      weight:this.state.weight,
+      height:this.state.height
+
+
+    }
+    axios.post('http://localhost:5000/students', student)
     .then (response => {
         console.log(response.data)
+        
     })
-  
+   
   };
-
 
 
   render(){
@@ -61,27 +76,27 @@ class NewStudent extends Component {
               </div>
               <div className="card-body">
                     <form onSubmit={this.sendStudent}>
-                      <div className="row form-group">
+                      <div className="row form-group" onChange={this.insertData}>
 
                         <div className="col-md-6">
                           <label className="pull-left label-txt" htmlFor="name">Name: </label>
-                          <input className="form-control" id="name" type="text" name="studentName" placeholder="Full Name" onChange={this.insertData} />
+                          <input className="form-control" id="name" type="text" name="name" placeholder="Full Name"/>
                         </div>
                         <div className="col-md-6">
                           <label className="pull-left label-txt" htmlFor="age">Age: </label>
-                          <input className="form-control" id="age" onChange={this.insertData} name="age" placeholder="Ex: 18" type="text"/>
+                          <input className="form-control" id="age" name="age" placeholder="Ex: 18" type="text"/>
                         </div>
 
                       </div>
-                      <div className="row form-group">
+                      <div className="row form-group" onChange={this.insertData}>
 
                         <div className="col-md-6">
                           <label className="pull-left label-txt" htmlFor="weight">Weight (KG): </label>
-                          <input className="form-control" id="weight" onChange={this.insertData} name="weight" placeholder="Ex: 92" type="text"/>
+                          <input className="form-control" id="weight" name="weight" placeholder="Ex: 92" type="text"/>
                         </div>
                         <div className="col-md-6">
                           <label className="pull-left label-txt" htmlFor="height">Height (M): </label>
-                          <input className="form-control" id="height" onChange={this.insertData} name="height" placeholder="Ex: 1.72" type="text"/>
+                          <input className="form-control" id="height" name="height" placeholder="Ex: 1.72" type="text"/>
                         </div>
 
                       </div>
