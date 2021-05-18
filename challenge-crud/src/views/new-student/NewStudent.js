@@ -46,23 +46,26 @@ class NewStudent extends Component {
 
   sendStudent = event =>{
     event.preventDefault();
-
-    const student = {
-
-      name:this.state.name,
-      age:this.state.age,
-      weight:this.state.weight,
-      height:this.state.height
-
-
-    }
-    axios.post('http://localhost:5000/students', student)
-    .then (response => {
-        console.log(response.data)
+      const student = {
         
-    })
-   
+        name:this.state.name,
+        age:this.state.age,
+        weight:this.state.weight,
+        height:this.state.height
+
+
+      }
+      axios.post('http://localhost:5000/students', student)
+      .then (response => {
+          console.log(response.data)
+          
+      })
+  
   };
+
+  redirectBack() {
+    window.location.href = "/";
+  }
 
 
   render(){
@@ -101,7 +104,7 @@ class NewStudent extends Component {
 
                       </div>
                           <Link className="btn btn-secondary btn-round pull-left bt-back" to="/">Return</Link>
-                          <button type="submit" className="btn btn-success btn-round pull-right bt-add" href="#">Save</button>
+                          <button type="submit" className="btn btn-success btn-round pull-right bt-add" onClick={this.redirectBack}>Save</button>
                     </form>
               </div>
           </div>

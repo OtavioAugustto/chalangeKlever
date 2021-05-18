@@ -25,12 +25,12 @@ function App() {
               </div>
             </Route>
             <Route exact path="/new-student">
-              <div className="App-content">
+              <div className="Student-content">
                 <NewStudent></NewStudent>
               </div>
             </Route>
-            <Route exact path="/edit-student">
-              <div className="App-content">
+            <Route exact path="/edit-student/:id">
+              <div className="Student-content">
                 <EditStudent></EditStudent>
               </div>
             </Route>

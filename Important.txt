@@ -1,0 +1,5 @@
+Comando para startar o servidor (Fazer isso em outro terminal) :
+- caso não rode no terminal direto configurar manualmente como script de inicialização "start" (substituir o atual e depois voltar)
+
+* script para rodar o servidor(mockApi) - npm start "json-server --watch db.json --port 5000"
+* script para rodar a aplicação - npm run start

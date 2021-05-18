@@ -43,9 +43,21 @@
   justify-content: center;
   font-size: calc(10px + 0.5vmin);
   color: #282c34;
-  margin: 4em 0em 0em 0em;
+  margin: 7em 0em 0em 0em;
 }
 
+.Student-content {
+  background-color: #ffffff;
+  display: flex;
+  min-height: 80%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 0.5vmin);
+  color: #282c34;
+  margin: 8em 0em 15em 0em;
+}
 
 .App-footer {
   background-color: #282c34;
@@ -54,7 +66,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 9.71em 0em 0em 0em;
+  margin: 5.71em 0em 0em 0em;
   font-size: calc(10px + 0.5vmin);
   color: white;
 }

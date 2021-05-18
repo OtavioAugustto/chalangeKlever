@@ -15,11 +15,15 @@ class ListStudents extends Component {
     const response = await mockStudents.get('');
     this.setState({ students: response.data });
   }
-  
+
+  getStudent(id) {
+    return mockStudents.get(`/${id}`);
+  }
+
+ 
   render(){
 
     const { students } = this.state;
-    console.log(students);
     return ( 
  
     <div className="container-fluid">
@@ -53,7 +57,7 @@ class ListStudents extends Component {
                                 <td>{student.height}</td>
                                 <td key="edit">
                                 <Link className="btn btn-info btn-round bt-edit"
-                                to="/edit-student">Edit</Link> 
+                                to={"/edit-student/" + student.id}>Edit</Link> 
                                 </td>
                                 <td name="remove">
                                 <a className="btn btn-danger btn-round bt-remove"
