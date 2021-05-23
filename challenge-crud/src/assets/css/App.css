@@ -76,6 +76,7 @@
   text-decoration: none;
   color: rgb(218, 77, 195);
 }
+
 .App-link {
   color: #61dafb;
 }
@@ -113,7 +114,7 @@
   margin: 0.5em 0em 0em 0em;
   border: 0;
   outline: none;
-  font-size: small;
+  font-size: medium;
   box-shadow: none;
 }
 
@@ -121,22 +122,23 @@
   margin: 0.5em 0em 0em 0em;
   border: 0;
   outline: none;
-  font-size: small;
+  font-size: medium;
   box-shadow: none;
 }
 
-.bt-edit{
-  border: 0;
-  outline: none;
-  font-size: small;
-  box-shadow: none;
+.edit{
+  font-size: x-large;
 }
 
-.bt-remove{
-  border: 0;
-  outline: none;
-  font-size: small;
-  box-shadow: none;
+
+.delete{
+  font-size: x-large;
+  color: rgba(216, 21, 21, 0.884);
+  
+}
+
+a.delete:hover{
+  color:rgb(185, 14, 14) !important;
 }
 
 .label-txt{

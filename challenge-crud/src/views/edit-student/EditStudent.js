@@ -3,6 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 import { Component } from 'react';
 import axios from 'axios';
 import ListStudents from '../../components/list-students/ListStudents';
+import { FaUserCheck } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
+
 
 
 
@@ -113,8 +116,8 @@ class EditStudent extends Component {
                           </div>
 
                           </div>
-                            <Link className="btn btn-secondary btn-round pull-left bt-back" to="/">Return</Link>
-                            <a className="btn btn-success btn-round pull-right bt-add" href="#">Save</a>
+                            <Link className="btn btn-danger btn-round pull-left bt-back" to="/">Cancel < FaTimes /></Link>
+                            <button className="btn btn-success btn-round pull-right bt-add" href="#">Save < FaUserCheck /></button>
                       </form>
                   </div>
               </div>

@@ -2,7 +2,8 @@ import '../../assets/css/App.css';
 import { Link } from 'react-router-dom';
 import { Component } from 'react';
 import axios from 'axios';
-
+import { FaUserCheck } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
 
 
 
@@ -103,8 +104,8 @@ class NewStudent extends Component {
                         </div>
 
                       </div>
-                          <Link className="btn btn-secondary btn-round pull-left bt-back" to="/">Return</Link>
-                          <button type="submit" className="btn btn-success btn-round pull-right bt-add" onClick={this.redirectBack}>Save</button>
+                          <Link className="btn btn-danger btn-round pull-left bt-back" to="/">Cancel < FaTimes /></Link>
+                          <button type="submit" className="btn btn-success btn-round pull-right bt-add" onClick={this.redirectBack}>Save < FaUserCheck /></button>
                     </form>
               </div>
           </div>

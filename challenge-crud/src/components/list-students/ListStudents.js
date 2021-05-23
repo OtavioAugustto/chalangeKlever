@@ -1,7 +1,10 @@
 import '../../assets/css/App.css';
 import { Link } from 'react-router-dom';
 import mockStudents from '../../api';
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import { FaUserEdit } from "react-icons/fa";
+import { FaUserTimes } from "react-icons/fa";
+import { FaUserPlus } from "react-icons/fa"
 
 
 
@@ -31,7 +34,7 @@ class ListStudents extends Component {
         <div className="card">
             <div className="card-header"> 
             <h2 className="title-table">List Of Students</h2>
-            <Link className="btn btn-success btn-round pull-right bt-add" to="/new-student">New Student</Link>
+            <Link className="btn btn-success btn-round pull-right bt-add" to="/new-student">< FaUserPlus /></Link>
         </div>
               <div className="card-body">
                 <div className="table-responsive">
@@ -56,12 +59,12 @@ class ListStudents extends Component {
                                 <td>{student.weight}</td>
                                 <td>{student.height}</td>
                                 <td key="edit">
-                                <Link className="btn btn-info btn-round bt-edit"
-                                to={"/edit-student/" + student.id}>Edit</Link> 
+                                <Link className="edit"
+                                to={"/edit-student/" + student.id}>< FaUserEdit /></Link> 
                                 </td>
                                 <td name="remove">
-                                <a className="btn btn-danger btn-round bt-remove"
-                                href="#">Remove</a> 
+                                <a className="delete"
+                                href="#">< FaUserTimes /></a> 
                             </td>
                           </tr>
                         ))}
